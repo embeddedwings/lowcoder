@@ -1,5 +1,6 @@
 import { en } from "./en";
 import { zh } from "./zh";
+import { ja } from "./ja";
 import { I18n } from "../../../common/i18n";
 
 export default function getI18nTranslator(languages: string[]) {

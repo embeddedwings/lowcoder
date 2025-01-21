@@ -2884,6 +2884,7 @@ export const en = {
     "inputUserDefinedPxValue": "Please Enter a Custom Pixel Value",
     "maxWidthTip": "Max Width Should Be Greater Than or Equal to 350",
     "themeSetting": "Applied Style Theme",
+    "themeSettingTitle": "Theme Settings",
     "themeSettingDefault": "Default",
     "themeCreate": "Create Theme",
     "appTitle": "Title",

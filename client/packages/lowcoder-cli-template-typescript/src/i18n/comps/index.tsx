@@ -18,6 +18,8 @@ export function getEchartsLocale() {
         return "PT";
       case "zh":
         return "ZH";
+      case "ja":
+        return "JA";
     }
   });
 }
@@ -28,6 +30,8 @@ export function getCalendarLocale() {
       return "zh-cn";
     case "pt":
       return "pt-br";
+    case "ja":
+      return "ja";
     default:
       return "en-gb";
   }

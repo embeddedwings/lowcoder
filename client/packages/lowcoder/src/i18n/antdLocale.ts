@@ -27,6 +27,7 @@ import sk_SK from "antd/es/locale/sk_SK";
 import sl_SI from "antd/es/locale/sl_SI";
 import mk_MK from "antd/es/locale/mk_MK";
 import pt_PT from "antd/es/locale/pt_PT";
+import ja_JP from "antd/es/locale/ja_JP";
 
 import { getValueByLocale } from "lowcoder-core";
 
@@ -127,6 +128,8 @@ function selectAntdLocale(language: string, region?: string) {
       return kn_IN; // Kannada (India)
     case "ml": // Malayalam
       return ml_IN; // Malayalam (India)
+    case "ja": // Japanese
+      return ja_JP; // Japanese (Japan)
 
     // Additional languages would follow this pattern
     default:

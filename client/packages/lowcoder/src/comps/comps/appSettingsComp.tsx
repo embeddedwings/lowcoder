@@ -392,7 +392,7 @@ function AppCanvasSettingsModal(props: ChildrenInstance) {
   return (
     <>
       <BaseSection
-        name={"Theme Settings"}
+        name={trans("appSetting.themeSettingTitle")}
         width={288}
         noMargin
         style={{

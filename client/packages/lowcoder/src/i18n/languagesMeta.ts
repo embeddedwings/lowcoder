@@ -14,7 +14,8 @@ import {
     Flag_th,
     Flag_ar,
     Flag_pt,
-    Flag_br
+    Flag_br,
+    Flag_jp
   } from "lowcoder-design";
 import { es, ru } from "./locales";
 
@@ -58,6 +59,10 @@ export interface LanguageMeta {
     ru: {
       languageName: "Русский",
       flag: Flag_ru
+    },
+    ja: {
+      languageName: "日本語",
+      flag: Flag_jp
     },
   };
   

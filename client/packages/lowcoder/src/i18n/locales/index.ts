@@ -7,8 +7,10 @@ export * from "./pt";
 export * from "./es";
 export * from "./zh";
 export * from "./ru";
+export * from "./ja";
 
 export * from "./enObj";
 export * from "./deObj";
 export * from "./itObj";
 export * from "./zhObj";
+export * from "./jaObj";
