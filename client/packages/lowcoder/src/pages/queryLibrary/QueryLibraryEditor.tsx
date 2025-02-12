@@ -90,7 +90,7 @@ export const QueryLibraryEditor = () => {
   const [elements, setElements] = useState<ElementsState>({ elements: [], total: 0 });
   const [queryLibrary, setQueryLibrary] = useState<any>({});
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(100);
   const [searchValues, setSearchValues] = useState("");
   const [modify, setModify] = useState(false);
 

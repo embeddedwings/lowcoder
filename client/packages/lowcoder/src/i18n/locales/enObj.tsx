@@ -3,23 +3,23 @@ import { I18nObjects } from "./types";
 export const enObj: I18nObjects = {
   jsonForm: {
     defaultSchema: {
-      title: "User Information",
-      description: "Form Example",
+      title: "ユーザー情報",
+      description: "フォーム例",
       type: "object",
       required: ["name", "phone"],
       properties: {
         name: {
           type: "string",
-          title: "Name",
+          title: "名前",
         },
         phone: {
           type: "string",
-          title: "Phone",
+          title: "電話番号",
           minLength: 11,
         },
         birthday: {
           type: "string",
-          title: "Birthday",
+          title: "誕生日",
         },
       },
     },
@@ -29,7 +29,7 @@ export const enObj: I18nObjects = {
         "ui:emptyValue": "",
       },
       phone: {
-        "ui:help": "at least 11 characters",
+        "ui:help": "少なくとも11文字",
       },
       birthday: {
         "ui:widget": "date",
@@ -44,70 +44,70 @@ export const enObj: I18nObjects = {
   table: {
     columns: [
       { key: "id", title: "ID" },
-      { key: "name", title: "Name" },
-      { key: "date", title: "Date" },
-      { key: "department", title: "Department", isTag: true },
+      { key: "name", title: "名前" },
+      { key: "date", title: "日付" },
+      { key: "department", title: "部署", isTag: true },
     ],
     defaultData: [
       {
         id: 1,
         name: "Reagen Gilberthorpe",
-        date: "7/5/2022",
-        department: "Marketing",
+        date: "2022/7/5",
+        department: "マーケティング",
       },
       {
         id: 2,
         name: "Haroun Lortzing",
-        date: "11/6/2022",
-        department: "Human Resources",
+        date: "2022/11/6",
+        department: "人事",
       },
       {
         id: 3,
         name: "Garret Kilmaster",
-        date: "11/14/2021",
-        department: "Research and Development",
+        date: "2021/11/14",
+        department: "研究開発",
       },
       {
         id: 4,
         name: "Israel Harrowsmith",
-        date: "4/3/2022",
-        department: "Training",
+        date: "2022/4/3",
+        department: "トレーニング",
       },
       {
         id: 5,
         name: "Loren O'Lagen",
-        date: "9/10/2022",
-        department: "Services",
+        date: "2022/9/10",
+        department: "サービス",
       },
       {
         id: 6,
         name: "Wallis Hothersall",
-        date: "4/18/2022",
-        department: "Accounting",
+        date: "2022/4/18",
+        department: "会計",
       },
       {
         id: 7,
         name: "Kaia Biskup",
-        date: "3/4/2022",
-        department: "Sales",
+        date: "2022/3/4",
+        department: "営業",
       },
       {
         id: 8,
         name: "Travers Saterweyte",
-        date: "1/9/2022",
-        department: "Human Resources",
+        date: "2022/1/9",
+        department: "人事",
       },
       {
         id: 9,
         name: "Mikey Niemetz",
-        date: "1/4/2022",
-        department: "Marketing",
+        date: "2022/1/4",
+        department: "マーケティング",
       },
       {
         id: 10,
         name: "Mano Meckiff",
-        date: "2/19/2022",
-        department: "Research and Development",
+        date: "2022/2/19",
+        department: "研究開発",
       },
     ],
   },
@@ -115,50 +115,50 @@ export const enObj: I18nObjects = {
     mockDataUrl: "https://6523073ef43b179384152c4f.mockapi.io/api/lowcoder/users",
     data: (code) => (
       <>
-        The current State of the Component with all Settings and Data listed here. You can reference to this data with the handlebar expression.
-        For example: {code("{{table1.selectedRow}}")}.
+        現在のコンポーネントの状態とすべての設定およびデータがここに一覧表示されます。ハンドルバー式を使ってこのデータを参照できます。
+        例: {code("{{table1.selectedRow}}")}.
       </>
     ),
     compProperties: (code) => (
       <>
-        When the component is selected, its properties are displayed on the right. Now you can set a Data Binding. Please delete all static Data and enter the following handlebar expression:
-        {code("{{query1.data}}")}. With this, you bind the data of the query to the table. The table will automatically display the data returned by the query. If the query updates the data, the table will also update the data automatically.
+        コンポーネントを選択すると、そのプロパティが右側に表示されます。ここでデータバインディングを設定できます。すべての静的データを削除し、次のハンドルバー式を入力してください:
+        {code("{{query1.data}}")}. これにより、クエリのデータがテーブルにバインドされます。クエリがデータを更新すると、テーブルも自動的にデータを更新します。
       </>
     ),
   },
   cascader: [
     {
-      value: "California",
-      label: "California",
+      value: "カリフォルニア",
+      label: "カリフォルニア",
       children: [
         {
-          value: "San Francisco",
-          label: "San Francisco",
+          value: "サンフランシスコ",
+          label: "サンフランシスコ",
           children: [
             {
-              value: "The Golden Gate Bridge",
-              label: "The Golden Gate Bridge",
+              value: "ゴールデンゲートブリッジ",
+              label: "ゴールデンゲートブリッジ",
             },
           ],
         },
       ],
     },
     {
-      value: "New South Wales",
-      label: "New South Wales",
+      value: "ニューサウスウェールズ",
+      label: "ニューサウスウェールズ",
       children: [
         {
-          value: "Sydney",
-          label: "Sydney",
+          value: "シドニー",
+          label: "シドニー",
           children: [
             {
-              value: "Sydney Opera House",
-              label: "Sydney Opera House",
+              value: "シドニーオペラハウス",
+              label: "シドニーオペラハウス",
             },
           ],
         },
       ],
     },
   ],
-  cascaderDefult: ["California", "San Francisco", "The Golden Gate Bridge"],
+  cascaderDefult: ["カリフォルニア", "サンフランシスコ", "ゴールデンゲートブリッジ"],
 };

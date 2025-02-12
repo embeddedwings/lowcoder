@@ -141,7 +141,8 @@ export const en = {
     "searchNotFound": "Can't find the right component?",
     "emptyPlugins": "No Plugins Added",
     "contactUs": "Contact Us",
-    "issueHere": "here."
+    "issueHere": "here.",
+    "folderListTitle": "Folders"
   },
   "prop": {
     "expand": "Expand",
@@ -163,6 +164,7 @@ export const en = {
     "showSearch": "Searchable",
     "defaultValue": "Default Value",
     "required": "Required Field",
+    "showEmptyValidation": "Show Validation On Empty/Reset",
     "readOnly": "Read Only",
     "readOnlyTooltip": "Read-only components appear normal but cannot be modified.",
     "minimum": "Minimum",
@@ -196,10 +198,13 @@ export const en = {
     "innerSider" : "Inner Sider",
     "showFooter": "Show Footer",
     "maskClosable": "Click Outside to Close",
+    "escapeClose": "Enable Close on Escape key",
     "toggleClose": "Enable Close Button",
     "showMask": "Show Mask",
     "textOverflow": "Text Overflow",
-    "scrollbar": "Show Scrollbars",
+    "scrollbar" : "Show Scrollbars",
+    "showVerticalScrollbar" : "Show Vertical Scrollbar",
+    "showHorizontalScrollbar" : "Show Horizontal Scrollbar",
     "siderScrollbar" : "Show Scrollbars in Sider",
     "mainScrollbar": "Show Scrollbars in main content",
     "modalScrollbar": "Show Scrollbars in Modal",
@@ -225,8 +230,6 @@ export const en = {
     "preventOverwriting": "Prevent overwriting styles",
     "color": "Color",
     "horizontalGridCells": "Horizontal Grid Cells",
-    "showHorizontalScrollbar": "Show Horizontal Scrollbar",
-    "showVerticalScrollbar": "Show Vertical Scrollbar",
     "timeZone": "TimeZone",
   },
   "autoHeightProp": {
@@ -565,7 +568,22 @@ export const en = {
     "siderBackgroundImageOrigin": "Sider Background Image Origin",
     "activeBackground": "Active Background Color",
     "labelBackground": "Label Background Color",
-
+    "gradientBackground": "Gradient Background Color",
+    "direction": "Direction",
+    "chartOpacity": "Opacity",
+    "chartBoxShadow": "Box Shadow",
+    "chartBorderStyle": "Border Style",
+    "chartBorderRadius": "Border Radius",
+    "chartBorderWidth": "Border Width",
+    "chartTextSize": "Text Size",
+    "chartTextWeight": "Text Weight",
+    "chartFontFamily": "Font Family",
+    "chartFontStyle": "Font Style",
+    "chartBackgroundColor": "Background Color",
+    "chartGradientColor": "Gradient Color",
+    "chartShadowColor": "Shadow Color",
+    "chartBorderColor": "Border Color",
+    "chartTextColor": "Text Color"
   },
   "export": {
     "hiddenDesc": "If true, the component is hidden",
@@ -769,7 +787,9 @@ export const en = {
     "categoryProjectManagement" : "Project Management",
     "categoryCrm" : "CRM",
     "categoryEcommerce" : "E-commerce",
-    "categoryApis" : "Others",
+    "categoryWebscrapers" : "Webscrapers & Open Data",
+    "categoryDocumentHandling" : "Report & Document Generation",
+    "categoryRPA" : "Robotic Process Automation",
   },
 
 
@@ -1253,6 +1273,10 @@ export const en = {
     "ganttChartCompName" : "Gantt Chart",
     "ganttChartCompDesc" : "A chart that illustrates a project schedule, showing the start and finish dates of elements and dependencies.",
     "ganttChartCompKeywords" : "gantt chart, project management, schedule",
+
+    "kanbanCompName" : "Kanban Board (preview!)",
+    "kanbanCompDesc" : "A board for visualizing workflow, with columns representing stages of work and cards representing tasks.",
+    "kanbanCompKeywords" : "kanban, board, workflow, tasks",
 
     // by mousheng
 
@@ -1776,7 +1800,12 @@ export const en = {
     "clearValueDesc": "Clear All Files",
     "parseFiles": "Parse Files",
     "parsedValueTooltip1": "If parseFiles Is True, Upload Files Will Parse to Object, Array, or String. Parsed Data Can Be Accessed via the parsedValue Array.",
-    "parsedValueTooltip2": "Supports Excel, JSON, CSV, and Text Files. Other Formats Will Return Null."
+    "parsedValueTooltip2": "Supports Excel, JSON, CSV, and Text Files. Other Formats Will Return Null.",
+    "forceCapture": "Force Capture",
+    "forceCaptureTooltip": "Instead of upload, capture image from camera",
+    "usePhoto": "Use Photo",
+    "retakePhoto": "Retake Photo",
+    "capture": "Capture",
   },
   "date": {
     "format": "Format",
@@ -2026,8 +2055,9 @@ export const en = {
   "image": {
     "src": "Image Source",
     "srcDesc": "The Image Source. Can be an URL, Path or Base64 String. for Example: data:image/png;base64, AAA... CCC",
-    "supportPreview": "Support Click Preview (zoom)",
-    "supportPreviewTip": "Effective When the Image Source is Valid"
+    "supportPreview": "Support Zoom Preview (on Click)",
+    "supportPreviewTip": "Effective When the Image Source is Valid",
+    "previewSrc": "HighRes Image Source"
   },
   "progress": {
     "value": "Value",
@@ -2253,12 +2283,69 @@ export const en = {
     "AppUsage": "Global App Usage",
   },
 
+  "subscription": {
+    "details": "Subscription Details",
+    "productDetails": "Product Details",
+    "productName": "Product Name",
+    "productDescription": "Product Description",
+    "productPrice": "Product Price",
+    "subscriptionDetails": "Subscription Details",
+    "status": "Status",
+    "startDate": "Start Date",
+    "currentPeriodEnd": "Current Period End",
+    "customerId": "Customer ID",
+    "subscriptionItems": "Subscription Items",
+    "itemId": "Item ID",
+    "plan": "Plan",
+    "quantity": "Quantity",
+    "product": "Product",
+    "invoices": "Invoices",
+    "invoiceNumber": "Invoice Number",
+    "date": "Date",
+    "amount": "Amount",
+    "link": "Link",
+    "viewInvoice": "View Invoice",
+    "downloadPDF": "Download PDF",
+    "billingReason": "Billing Reason",
+    "subscriptionCycle": "monthly Subscription",
+    "customer": "Customer",
+    "links": "Links",
+    "paid": "Paid",
+    "unpaid": "Unpaid",
+    "noInvoices": "No invoices available",
+    "costVolumeDevelopment": "Cost/Volume Development",
+    "noUsageRecords": "No usage records available",
+    "itemDescription": "Item Description",
+    "periodStart": "Period Start",
+    "periodEnd": "Period End",
+    "billingReason.subscription_cycle": "Subscription Cycle",
+    "billingReason.subscription_create": "Subscription Creation",
+    "billingReason.manual": "Manual Billing",
+    "billingReason.upcoming": "Upcoming Billing",
+    "billingReason.subscription_threshold": "Subscription Threshold",
+    "billingReason.subscription_update": "Subscription Update",
+    "backToSubscriptions": "Back to Subscriptions",
+    "manageSubscription" : "Manage Your Subscriptions",
+    "subscriptionHelp" : "Subscription Help",
+    "subscriptionHelpDescription" : "If you have any questions, please contact us. We are happy to help you. service@lowcoder.cloud",
+    "success" : "Payment & Subscription Success",
+    "successTitle" : "Thank You for Joining the Lowcoder Family!",
+    "successThankYou" : "We're thrilled to have you on board! Your trust in Lowcoder means everything to us, and we're committed to delivering an exceptional experience from day one.\n\nAt Lowcoder, you're not just a customer but you're part of a community that drives innovation and growth. Our mission is to help you achieve your goals with ease, whether that means solving challenges quickly, building innovative solutions, or being there whenever you need support.\n\nHere's what you can look forward to:\n\n• Top-notch support: Our team is ready to assist you at every step.\n• Continuous innovation: We're always improving to bring you the best tools and features.\n• A partnership for success: Your success is our priority.\n\nThank you for inspiring us to push boundaries and strive for excellence every day. We can't wait to see what we'll build together.\n\nWelcome aboard! Let's make extraordinary things happen.",
+    "successLowcoderTeam" : "The Lowcoder Team",
+  },
+  "subscriptionError": {
+    "fetchProductDetails": "Error fetching product details.",
+    "fetchSubscriptionDetails": "Error fetching subscription details.",
+    "fetchInvoices": "Error fetching invoices."
+  },
+
 
   // thirteenth part
 
 
   "memberSettings": {
     "admin": "Admin",
+    "superAdmin": "Super Admin",
     "adminGroupRoleInfo": "Admin Can Manage Group Members and Resources",
     "adminOrgRoleInfo": "Admins Own All Resources and Can Manage Groups.",
     "member": "Member",
@@ -2333,6 +2420,7 @@ export const en = {
     "gutter" : "Gap",
     "gutterTooltip" : "The distance between tabs in px",
     "tabsCentered" : "Centered Tabs",
+    "destroyInactiveTab": "Destroy Inactive TabPane"
   },
   "formComp": {
     "containerPlaceholder": "Drag Components from the Right Pane or",
@@ -2450,7 +2538,8 @@ export const en = {
     "openUrl": "Open URL",
     "openApp": "Open App",
     "copyToClipboard": "Copy to Clipboard",
-    "downloadFile": "Download File"
+    "downloadFile": "Download File",
+    "logoutUser" : "Logout User",
   },
   "messageComp": {
     "info": "Send a Notification",
@@ -2574,7 +2663,8 @@ export const en = {
     "chartClick": "Click",
     "chartVisit": "Visit",
     "chartQuery": "Query",
-    "chartBuy": "Buy"
+    "chartBuy": "Buy",
+    "canvas": "Canvas Settings",
   },
   "themeDetail": {
     "primary": "Brand Color",
@@ -2610,11 +2700,31 @@ export const en = {
     "paddingDesc": "Default padding typically used for most components",
     "containerHeaderPadding": "Header Padding",
     "containerheaderpaddingDesc": "Default header padding typically used for most components",
-    "gridColumns": "Canvas Grid Columns",
+    "gridColumns": "Grid Columns",
     "gridColumnsDesc": "Default number of columns typically used for most containers",
     "loadingIndicators": "Loading Indicators",
     "showComponentLoadingIndicators": "Show loading indicators when component load",
-    "showDataLoadingIndicators": "Show loading indicators when data load"
+    "showDataLoadingIndicators": "Show loading indicators when data load",
+    "background": "Background Styles",
+    "gridSettings": "Grid Settings",
+    "gridRowHeight": "Grid Row Height",
+    "gridRowHeightDesc": "Height of each row in grid",
+    "gridRowCount": "Grid Row Count",
+    "gridRowCountDesc": "Max. number of rows in grid",
+    "gridPaddingX": "Horizontal Padding",
+    "gridPaddingXDesc": "Canvas horizontal padding",
+    "gridPaddingY": "Vertical Padding",
+    "gridPaddingYDesc": "Canvas vertical padding",
+    "gridBgImage": "Background Image",
+    "gridBgImageDesc": "Canvas background image",
+    "gridBgImageRepeat": "Background Image Repeat",
+    "gridBgImageRepeatDesc": "Canvas background image repeat",
+    "gridBgImageSize": "Background Image Size",
+    "gridBgImageSizeDesc": "Canvas background image size",
+    "gridBgImagePosition": "Background Image Position",
+    "gridBgImagePositionDesc": "Canvas background image position",
+    "gridBgImageOrigin": "Background Image Origin",
+    "gridBgImageOriginDesc": "Canvas background image origin",
   },
   "pluginSetting": {
     "title": "Plugins",
@@ -2693,6 +2803,7 @@ export const en = {
     "switch": "Switch Component: "
   },
   "module": {
+    "folderNotEmpty": "Folder is not empty",
     "emptyText": "No Data",
     "docLink": "Read More About Modules...",
     "documentationText" : "Modules are complete Applications, that can get included and repeated in other Applications and it functions just like a single component. As modules can get embedded, they need to be able to interact with your outside apps or websites. This four settings help to support communication with a Module.",
@@ -2773,12 +2884,24 @@ export const en = {
     "inputUserDefinedPxValue": "Please Enter a Custom Pixel Value",
     "maxWidthTip": "Max Width Should Be Greater Than or Equal to 350",
     "themeSetting": "Applied Style Theme",
+    "themeSettingTitle": "Theme Settings",
     "themeSettingDefault": "Default",
     "themeCreate": "Create Theme",
     "appTitle": "Title",
     "appDescription": "Description",
     "appCategory": "Category",
-    "showPublicHeader": "Show header in public view"
+    "showPublicHeader": "Show header in public view",
+    "canvas": "Canvas Settings",
+    "gridColumns": "Grid Columns",
+    "gridRowHeight": "Grid Row Height",
+    "gridRowCount": "Grid Row Count",
+    "gridPaddingX": "Canvas Horizontal Padding",
+    "gridPaddingY": "Canvas Vertical Padding",
+    "gridBgImage": "Background Image",
+    "gridBgImageRepeat": "Background Image Repeat",
+    "gridBgImageSize": "Background Image Size",
+    "gridBgImagePosition": "Background Image Position",
+    "gridBgImageOrigin": "Background Image Origin"
   },
   "customShortcut": {
     "title": "Custom Shortcuts",
@@ -2926,7 +3049,13 @@ export const en = {
     "editorMode_logic": "Logic",
     "editorMode_both": "Both",
     "editorMode_layout_tooltip": "Customise the component's appearance and layout, in the right window. Adjust how it looks, styles, and animates.",
-    "editorMode_logic_tooltip": "Set up how your component works and interacts, in the right window. Manage its content and interactive behaviours."
+    "editorMode_logic_tooltip": "Set up how your component works and interacts, in the right window. Manage its content and interactive behaviours.",
+    "AppEditingBlocked": "App Editing Blocked for:",
+    "AppEditingBlockedHint": "Changes will not be saved while another user is editing this app.",
+    "AppEditingBlockedMessage": "Please wait before check the editing status of the App.",
+    "AppEditingBlockedCheckStatus": "Check App Status",
+    "AppEditingBlockedSomeone": "Someone",
+    "AppEditingBlockedMessageSnipped": "is editing this app",
   },
   "userAuth": {
     "registerByEmail": "Sign Up",
@@ -2963,7 +3092,11 @@ export const en = {
     "resetSuccessDesc": "Password Reset Succeeded. The New Password is: {password}",
     "resetLostPasswordSuccess": "Password Reset Succeeded. Please login again.",
     "copyPassword": "Copy Password",
-    "poweredByLowcoder": "Powered by: Lowcoder.cloud"
+    "poweredByLowcoder": "Powered by: Lowcoder.cloud",
+    "continue": "Continue",
+    "enterPassword": "Enter your password",
+    "selectAuthProvider": "Select Authentication Provider",
+    "selectWorkspace": "Select your workspace",
   },
   "preLoad": {
     "jsLibraryHelpText": "Add JavaScript Libraries to Your Current Application via URL Addresses. lodash, day.js, uuid, numbro are Built into the System for Immediate Use. JavaScript Libraries are Loaded Before the Application is Initialized, Which Can Have an Impact on Application Performance.",
@@ -3497,12 +3630,13 @@ export const en = {
     "formSelectPlaceholder": "Please Select the {label}",
     "saveSuccess": "Saved Successfully",
     "dangerLabel": "Danger Zone",
-    "dangerTip": "Disabling This ID Provider May Result in Some Users Being Unable to Log In. Proceed With Caution.",
+    "dangerTip": "Disabling or Deleting This ID Provider May Result in Some Users Being Unable to Log In. Proceed With Caution.",
+    "lastEnabledConfig": "You can't disable/delete config as this is the only enabled configuration.",
     "disable": "Disable",
     "disableSuccess": "Disabled Successfully",
     "encryptedServer": "-------- Encrypted on the Server Side --------",
     "disableTip": "Tips",
-    "disableContent": "Disabling This ID Provider May Result in Some Users Being Unable to Log In. Are You Sure to Proceed?",
+    "disableContent": "{action} This ID Provider May Result in Some Users Being Unable to Log In. Are You Sure to Proceed?",
     "manualTip": "",
     "lockTip": "The Content is Locked. To Make Changes, Please Click the {icon} to Unlock.",
     "lockModalContent": "Changing the 'ID Attribute' Field Can Have Significant Impacts on User Identification. Please Confirm That You Understand the Implications of This Change Before Proceeding.",

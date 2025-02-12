@@ -2655,7 +2655,7 @@ export const zh: typeof en = {
     },
     customComponent: {
         ...en.customComponent,
-        entryUrl: "https://sdk.lowcoder.cloud/custom_component.html",
+        entryUrl: "https://byouinkanrigaku.cds.ai/embed/custom_component.html",
     },
     template: {
         ...en.template,

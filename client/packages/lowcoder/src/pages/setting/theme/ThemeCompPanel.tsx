@@ -43,10 +43,10 @@ const CompNameLabel = styled.div`
   ${labelCss};
   line-height: 15px;
   display: table;
-  margin: 3px auto 0;
+  margin: 3px -3px 0;
   color: #333333;
   text-align: center;
-  word-break: keep-all;
+  // word-break: keep-all;
 `;
 
 const CompEnNameLabel = styled.span`

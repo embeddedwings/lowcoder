@@ -3622,7 +3622,7 @@ export const en = {
         dataResponder: "https://docs.lowcoder.cloud/lowcoder-documentation/business-logic-in-apps/write-javascript/data-responder",
     },
     customComponent: {
-        entryUrl: "https://sdk.lowcoder.cloud/custom_component.html",
+        entryUrl: "https://byouinkanrigaku.cds.ai/embed/custom_component.html",
     },
     template: {
         cloneUrl: "/apps/template-import/",

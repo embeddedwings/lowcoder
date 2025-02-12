@@ -1,8 +1,8 @@
 // import table from "./componentDocExtra/table.md?url";
 
 export const ja = {
-    "productName": "Lowcoder",
-    "productDesc": "最低限のコーディング経験で、会社や顧客向けにソフトウェアアプリケーションを作成できます。Lowcoderは、Retool、Appsmith、Tooljetの優れた代替手段です。",
+    "productName": "病院管理学",
+    "productDesc": "",
     "notSupportedBrowser": "現在のブラウザは互換性の問題がある可能性があります。最適なユーザー体験のために、最新バージョンのChromeをご利用ください。",
     "create": "作成",
     "move": "移動",
@@ -53,7 +53,7 @@ export const ja = {
     },
     "codeEditor": {
       "notSupportAutoFormat": "現在のコードエディターは自動フォーマットをサポートしていません。",
-      "fold": "折りたたむ"
+      "fold": "✕"
     },
     "exportMethod": {
       "setDesc": "プロパティを設定: {property}",
@@ -676,7 +676,7 @@ export const ja = {
       "quickRestAPI": "RESTクエリ",
       "quickStreamAPI": "ストリームクエリ",
       "quickGraphql": "GraphQLクエリ",
-      "lowcoderAPI": "Lowcoder API",
+      "lowcoderAPI": "API",
       "executeJSCode": "JavaScriptコードを実行",
       "importFromQueryLibrary": "クエリライブラリからインポート",
       "importFromFile": "ファイルからインポート",
@@ -760,8 +760,8 @@ export const ja = {
       "connectSuccessfully": "接続成功",
       "saveSuccessfully": "保存成功",
       "database": "データベース",
-      "cloudHosting": "クラウドホスティングされたLowcoderは、127.0.0.1またはlocalhostを使用してローカルサービスにアクセスできません。パブリックネットワークデータソースに接続するか、プライベートサービスにはリバースプロキシを使用してください。",
-      "notCloudHosting": "Dockerホスティングされた展開では、Lowcoderはブリッジネットワークを使用するため、127.0.0.1およびlocalhostはホストアドレスとして無効です。ローカルマシンのデータソースにアクセスするには、",
+      "cloudHosting": "",
+      "notCloudHosting": "",
       "howToAccessHostDocLink": "ホストAPI/DBへのアクセス方法",
       "returnList": "戻る",
       "chooseDatasourceType": "データソースタイプを選択",
@@ -769,7 +769,7 @@ export const ja = {
       "testConnection": "接続テスト",
       "save": "保存",
       "whitelist": "許可リスト",
-      "whitelistTooltip": "必要に応じて、LowcoderのIPアドレスをデータソースの許可リストに追加してください。",
+      "whitelistTooltip": "",
       "address": "アドレス: ",
       "nameExists": "名前 {name} は既に存在します",
       "jsQueryDocLink": "JavaScriptクエリについて",
@@ -1355,7 +1355,7 @@ export const ja = {
       "text": "今日は良い日です。",
       "triggerQuery": "クエリをトリガー",
       "updateData": "データを更新",
-      "updateText": "Lowcoderで独自のカスタムコンポーネントを開発する気分も最高です！",
+      "updateText": "独自のカスタムコンポーネントを開発する気分も最高です！",
       "sdkGlobalVarName": "Lowcoder",
       "data": "カスタムコンポーネントに渡すデータ",
       "code": "カスタムコンポーネントのコード"
@@ -2327,11 +2327,11 @@ export const ja = {
       "backToSubscriptions": "サブスクリプションに戻る",
       "manageSubscription": "サブスクリプションを管理する",
       "subscriptionHelp": "サブスクリプションヘルプ",
-      "subscriptionHelpDescription": "ご質問がございましたらお問い合わせください。喜んでお手伝いします: service@lowcoder.cloud",
+      "subscriptionHelpDescription": "ご質問がございましたらお問い合わせください。",
       "success": "支払いおよびサブスクリプション成功",
-      "successTitle": "Lowcoder ファミリーへのご参加、ありがとうございます！",
-      "successThankYou": "ご参加いただき、ありがとうございます！ Lowcoder への信頼は私たちにとってすべてであり、初日から卓越した体験を提供することをお約束します。",
-      "successLowcoderTeam": "Lowcoder チーム"
+      "successTitle": "ご参加ありがとうございます！",
+      "successThankYou": "ご参加いただき、ありがとうございます！",
+      "successLowcoderTeam": "チーム"
     },
     "subscriptionError": {
       "fetchProductDetails": "製品詳細の取得エラー。",
@@ -2385,9 +2385,9 @@ export const ja = {
       "syncGroupTip": "このグループはアドレス帳同期グループのため編集できません"
     },
     "orgSettings": {
-      "newOrg": "新しいワークスペース（組織）",
+      "newOrg": "新しいワークスペース",
       "title": "ワークスペース",
-      "createOrg": "ワークスペース（組織）を作成",
+      "createOrg": "ワークスペースを作成",
       "deleteModalTitle": "このワークスペースを削除してもよろしいですか？",
       "deleteModalContent": "このワークスペース {permanentlyDelete} を削除しようとしています。一度削除すると、このワークスペース {notRestored}。",
       "permanentlyDelete": "永久に",
@@ -2636,7 +2636,7 @@ export const ja = {
       "phoneColumn": "電話",
       "subTitle": "タイトル",
       "linkLabel": "リンク",
-      "linkUrl": "app.lowcoder.cloud",
+      "linkUrl": "byouinkanrigaku.cds.ai",
       "progressLabel": "進捗",
       "sliderLabel": "スライダー",
       "radioLabel": "ラジオ",
@@ -2847,7 +2847,7 @@ export const ja = {
     "apiMessage": {
       "authenticationFail": "ユーザー認証に失敗しました。再度サインインしてください。",
       "verifyAccount": "アカウントの確認が必要です。",
-      "functionNotSupported": "現在のバージョンではこの機能はサポートされていません。Lowcoderビジネスチームに連絡してアカウントをアップグレードしてください。"
+      "functionNotSupported": "現在のバージョンではこの機能はサポートされていません。"
     },
     "globalErrorMessage": {
       "createCompFail": "コンポーネント{comp}の作成に失敗しました",
@@ -3092,7 +3092,7 @@ export const ja = {
       "resetSuccessDesc": "パスワードのリセットが成功しました。新しいパスワードは: {password}",
       "resetLostPasswordSuccess": "パスワードのリセットが成功しました。もう一度ログインしてください。",
       "copyPassword": "パスワードをコピー",
-      "poweredByLowcoder": "提供：Lowcoder.cloud",
+      "poweredByLowcoder": "",
       "continue": "続ける",
       "enterPassword": "パスワードを入力",
       "selectAuthProvider": "認証プロバイダーを選択",
@@ -3111,7 +3111,7 @@ export const ja = {
       "jsLibraryDownloadError": "JavaScriptライブラリのダウンロードエラー",
       "jsLibraryInstallSuccess": "JavaScriptライブラリのインストールに成功しました",
       "jsLibraryInstallFailed": "JavaScriptライブラリのインストールに失敗しました",
-      "jsLibraryInstallFailedCloud": "ライブラリがサンドボックス内で利用できない可能性があります。 [ドキュメント](https://docs.lowcoder.cloud/build-apps/write-javascript/use-third-party-libraries#manually-import-libraries)\n{message}",
+      "jsLibraryInstallFailedCloud": "ライブラリがサンドボックス内で利用できない可能性があります。\n{message}",
       "jsLibraryInstallFailedHost": "{message}",
       "add": "新規追加",
       "jsHelpText": "現在のアプリケーションにグローバルメソッドまたは変数を追加します。",
@@ -3188,9 +3188,9 @@ export const ja = {
       "profile": "プロフィール",
       "news": "ニュース",
       "newsLoading": "数秒で読み込まれます。",
-      "orgHome": "ホームページ（組織）",
+      "orgHome": "ホームページ",
       "yourOrg": "組織",
-      "orgHomeTitle": "組織のホームページ",
+      "orgHomeTitle": "ホームページ",
       "appMarketplace": "マーケットプレイス",
       "allApplications": "アプリ",
       "allModules": "全モジュール",
@@ -3198,7 +3198,7 @@ export const ja = {
       "yourFolders": "フォルダ",
       "modules": "モジュール",
       "module": "モジュール",
-      "api": "Lowcoder API",
+      "api": "API",
       "trash": "ゴミ箱",
       "marketplace": "マーケットプレイス",
       "allCategories": "すべてのカテゴリ",
@@ -3287,7 +3287,7 @@ export const ja = {
     },
 
     "support": {
-      "supportTitle": "Lowcoderサポート",
+      "supportTitle": "サポート",
       "supportContent": "ご質問やサポートが必要な場合は、チケットシステムをご利用いただき、迅速に問題を解決してください。",
       "newSupportTicket": "新しいサポートチケット",
       "ticketTitle": "タイトル",
@@ -3375,8 +3375,8 @@ export const ja = {
   
       
     "componentDoc": {
-      "markdownDemoText": "**Lowcoder** | コーディングの経験が少なくても、会社や顧客のためにソフトウェアアプリケーションを作成できます。Lowcoderは、Retool、Appsmith、Tooljetの最良の代替手段です。",
-      "demoText": "Lowcoder | コーディングの経験が少なくても、会社や顧客のためにソフトウェアアプリケーションを作成できます。Lowcoderは、Retool、Appsmith、Tooljetの最良の代替手段です。",
+      "markdownDemoText": "",
+      "demoText": "",
       "submit": "送信",
       "style": "スタイル",
       "danger": "危険",
@@ -3591,7 +3591,8 @@ export const ja = {
       
       
     "playground": {
-      "url": "https://app.lowcoder.cloud/playground/{compType}/1",
+      // "url": "https://app.lowcoder.cloud/playground/{compType}/1",
+      "url": "",
       "data": "現在のデータ状態",
       "preview": "プレビュー",
       "property": "プロパティ",
@@ -3853,7 +3854,7 @@ export const ja = {
         },
         "description": {
           "label": "説明",
-          "placeholder": "Lowcoderへようこそ！",
+          "placeholder": "ようこそ！",
           "tooltip": "ステップの説明。ここではHTMLが有効です。",
         },
         "mask": {
@@ -3951,7 +3952,7 @@ export const ja = {
       "dataResponder": "https://docs.lowcoder.cloud/lowcoder-documentation/business-logic-in-apps/write-javascript/data-responder",
     },
     "customComponent": {
-      "entryUrl": "https://sdk.lowcoder.cloud/custom_component.html",
+      "entryUrl": "https://byouinkanrigaku.cds.ai/embed/custom_component.html",
     },
     "template": {
       "cloneUrl": "/apps/template-import/",
