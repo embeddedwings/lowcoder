@@ -169,7 +169,7 @@ export default function ApplicationHome() {
                   routePath: NEWS_URL,
                   routeComp: NewsView,
                   icon: ({ selected, ...otherProps }) => selected ? <NewsIcon {...otherProps} width={"24px"}/> : <NewsIcon {...otherProps} width={"24px"}/>,
-                  visible: ({ user }) => user.orgDev,
+                  visible: ({ user }) => false,
                   style: { color: "red" },
                   mobileVisible: false,
                 },
@@ -179,8 +179,8 @@ export default function ApplicationHome() {
                   routePathExact: false,
                   routeComp: OrgView,
                   icon: ({ selected, ...otherProps }) => selected ? <WorkspacesIcon {...otherProps} width={"24px"}/> : <WorkspacesIcon {...otherProps} width={"24px"}/>,
-                  visible: ({ user }) => !user.orgDev,
-                  mobileVisible: true,
+                  visible: ({ user }) => false,
+                  mobileVisible: false,
                 },
                 {
                   text: <TabLabel>{trans("home.marketplace")}</TabLabel>,
@@ -188,6 +188,7 @@ export default function ApplicationHome() {
                   routePathExact: false,
                   routeComp: MarketplaceView,
                   icon: ({ selected, ...otherProps }) => selected ? <MarketplaceIcon {...otherProps} width={"24px"}/> : <MarketplaceIcon {...otherProps} width={"24px"}/>,
+                  visible: ({ user }) => false,
                   mobileVisible: false,
                 },
               ]
